@@ -1,0 +1,168 @@
+/* Import Adobe Dazzle Universe font */
+body {
+    font-family: "dazzle-unicase", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+h1 {
+    font-family: "dazzle-unicase", sans-serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+h2 {
+    font-family: "dazzle-unicase", sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #000DFF;
+}
+
+h3 {
+    font-family: "dazzle-unicase", sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #000DFF;
+}
+
+h4 {
+    font-family: "dazzle-unicase", sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+
+
+p {
+    font-family: "dazzle-unicase", sans-serif;
+    font-size: 10px;
+    margin: 20px 600px; /* 20px top and bottom, 40px left and right */
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+}
+
+
+
+.footer {
+    background-color: #a9a9a9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .about-section h2,
+    .collections-section h2 {
+        font-size: 28px;
+    }
+
+    .collection h3 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEDGE DESIGN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/exy5dcs.css">
+</head>
+<body>
+
+    <div class="menu-icon">☰</div>
+    <nav class="menu">
+        <ul>
+            <li><h2><a href="#link1">Subpage 1</a></h2></li>
+            <li><h2><a href="#link2">Subpage 2</a></h2></li>
+            <li><h2><a href="#link3">Subpage 3</a></h2></li>
+            <li><h2><a href="./Contact Page/index.html">Contact</a></h2></li>
+        </ul>
+    </nav>
+    
+
+    
+    <div class="container no-select">
+        <header>
+            <div class="logo">   
+                WEDGE®<br> DESIGN
+            </div>
+            
+            
+            <div class="corner-logo">w</div>
+        </header>
+
+        <main>
+            <div class="left-content">
+                <h1>wEDGE</h1>
+                <h2>FURNITURE / OBJECT / THINGS</h2>
+                <footer>
+                    <div class="footer-text">FW/24 COLLECTION - METAMORPHOSIS</div>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+
+        <a href="#" class="explore-link">INTERACT TO EXPLORE ↑</a>
+
+    <div class="three-model-container moved-right">
+        <div class="three-container"></div>
+    </div>
+    
+    <!-- JavaScript includes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/loaders/OBJLoader.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+    <script src="scripts.js"></script>
+
+        <!-- JavaScript for Menu Toggle -->
+        <script>
+            const menuIcon = document.querySelector('.menu-icon');
+            const menu = document.querySelector('.menu');
+    
+            menuIcon.addEventListener('click', () => {
+                menu.classList.toggle('open');
+            });
+        </script>
+
+</body>
+</html>

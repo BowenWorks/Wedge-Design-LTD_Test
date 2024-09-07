@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    font-family: 'dazzle-unicase', sans-serif;
+    background-color: #fff;
+}
+
+/* Fade-in animation for the body */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+    font-size: 30px;
+    pointer-events: auto; /* Ensure the icon is clickable */
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the menu icon */
+.menu-icon:hover {
+    background-color: #333;
+}
+
+/* Hidden Menu Container */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Off-screen initially */
+    height: 100vh;
+    width: 250px;
+    background-color: #000;
+    color: #fff;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+/* List for Menu Links */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* List Items */
+.menu ul li {
+    margin: 20px 0;
+}
+
+/* Menu Links */
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect on menu links */
+.menu ul li a:hover {
+    opacity: 0.6;
+}
+
+/* Slide-in Menu when opened */
+.menu.open {
+    right: 0; /* Brings the menu into view */
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: 10px;
+    z-index: -1;
+    height: 100vh;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 4%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 1;
+}
+
+.left-content {
+    padding: 20px;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    pointer-events: auto;
+}
+
+.logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+h1 {
+    font-size: 170px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+h2 {
+    
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.footer-text {
+    font-size: 16px;
+    color: #555;
+    padding-bottom: 40px;
+}
+
+
+/* Explore Button Overlay Styles */
+.explore-link {
+    position: absolute;      /* Position it relative to the viewport */
+    top: 90%;                /* Move it 50% from the top of the viewport */
+    left: 50%;               /* Move it 50% from the left of the viewport */
+    transform: translate(-50%, -50%); /* Shift it back by 50% of its width and height to center */
+    display: inline-block;   /* Button should size according to content */
+    padding: 10px 20px;      /* Define padding for the button size */
+    border: 2px solid #000;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background-color: white; /* Optional background color */
+    transition: background-color 0.3s ease;
+    text-align: center;      /* Center text inside the button */
+    z-index: 100;            /* Ensure it stays on top of other content */
+}
+
+
+/* 3D Model Container */
+.three-model-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translate(0, 0);
+}
+
+.three-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.corner-logo {
+    font-size: 3em;
+    font-weight: bold;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    color: black;
+    z-index: 2;
+}
+
+/* Custom positioning for the 3D model */
+.moved-right {
+    transform: translateX(5px);
+}
